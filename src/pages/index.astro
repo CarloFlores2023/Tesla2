@@ -1,6 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import HeroSection from "../components/HeroSection.astro";
+import ModelX from "../components/ModelX.astro";
+import YModel from "../components/YModel.astro";
+import ModelS from "../components/ModelS.astro";
+import Powerwall from "../components/Powerwall.astro";
+import Charger from "../components/Charger.astro";
 ---
 <Layout title="Croissant con Café">
   
@@ -30,12 +35,26 @@ import HeroSection from "../components/HeroSection.astro";
 </nav>
 
     </header>
-    <main class="snap-y relative w-full h-screen overflow-auto">
+    <main class=" snap-mandatory snap-y relative w-full h-screen overflow-auto">
+      <div class="snap-center">
      <HeroSection />
-     <HeroSection />
-     <HeroSection />
-     <HeroSection />
-     <HeroSection />
+     </div>
+      </div>
+      <div class="snap-center">
+        <ModelX />
+        </div>
+        <div class="snap-end">
+          <YModel/>
+          </div>
+          <div class="snap-center">
+            <ModelS/>
+            </div>
+            <div class="snap-center">
+              <Powerwall/>
+              </div>
+              <div class="snap-center">
+                <Charger/>
+                </div>
   </main>
   
 </Layout>
